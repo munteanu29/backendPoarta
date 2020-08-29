@@ -1,10 +1,6 @@
-﻿using System.Drawing;
-using itec_mobile_api_final.Entities;
-using itec_mobile_api_final.Heater;
-using itec_mobile_api_final.HeaterSchedule;
+﻿using itec_mobile_api_final.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 
 namespace itec_mobile_api_final.Data
 {
@@ -13,9 +9,7 @@ namespace itec_mobile_api_final.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
-          public DbSet<HeaterEntity> HeaterEntities { get; set; }
-          public DbSet<TemperatureMeasurementEntity> TemperatureMeasurementEntities { get; set; }
-          public DbSet<HeaterScheduleEntity> HeaterScheduleEntities { get; set; }
+          public DbSet<DoorEntity.DoorEntity> DoorEntities { get; set; }
           
 
 
